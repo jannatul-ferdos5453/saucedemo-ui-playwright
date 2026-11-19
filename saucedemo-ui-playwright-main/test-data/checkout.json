@@ -1,0 +1,11 @@
+{
+  "customerInfo": {
+    "firstName": "SQA",
+    "lastName": "Engineer",
+    "postalCode": "1212"
+  },
+  "messages": {
+    "lockedOutError": "Epic sadface: Sorry, this user has been locked out.",
+    "orderSuccess": "Thank you for your order!"
+  }
+}

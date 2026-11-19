@@ -1,0 +1,28 @@
+{
+  "name": "saucedemo-ui-playwright",
+  "version": "1.0.0",
+  "description": "UI Automation Framework for SauceDemo using Playwright JS & POM",
+  "main": "index.js",
+  "scripts": {
+    "test:q1": "npx playwright test tests/q1_locked_user.spec.js",
+    "test:q2": "npx playwright test tests/q2_standard_user.spec.js",
+    "test:q3": "npx playwright test tests/q3_performance_glitch.spec.js",
+    "test:sequential": "npx playwright test tests/sequential_suite.spec.js",
+    "test:all-separate": "npx playwright test tests/q1_locked_user.spec.js tests/q2_standard_user.spec.js tests/q3_performance_glitch.spec.js",
+    "report:html": "npx playwright show-report",
+    "report:allure": "npx allure generate allure-results --clean -o allure-report && npx allure open allure-report"
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "saucedemo",
+    "sqa"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "allure-commandline": "^2.30.0",
+    "allure-playwright": "^3.0.0"
+  }
+}
